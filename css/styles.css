@@ -1,7 +1,7 @@
 :root {
   --background: #333333;
   --yellow: #FFD700;
-  --orange: #c1ab0b;
+  --orange: #877805;
   --blue: #001F3F;
   --text: #f5f5f5;
 }
@@ -19,7 +19,8 @@ body {
 }
 
 .container {
-  min-width: 100vh;
+  min-width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -141,7 +142,7 @@ body {
   color: var(--orange);
 }
 
-.title-container-cards h2 {
+.title-container-cards h3 {
   font-size: 1.5rem;
 }
 
@@ -217,7 +218,6 @@ body {
 
 .text__who p {
   line-height: 2.5rem;
-
   font-size: 1rem;
   text-align: justify;
   margin-bottom: 10px;
@@ -225,21 +225,20 @@ body {
 
 
 .comments{
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   gap: 10px;
   padding: 10px;
-  margin: 4rem;
+  margin: 4rem 0;
 }
 
 .comment {
   display:flex;
   justify-content: space-between;
   align-items: center;
-  width: 800px;
+  max-width: 800px;
   margin-top: 4rem;
   padding: 10px;
   gap: 10px;
@@ -281,7 +280,7 @@ body {
   flex-direction: column;
   gap: 10px;
   padding: 10px;
-  width: 500px;
+  max-width: 600px;
 }
 
 .container__contact form label {
@@ -324,4 +323,71 @@ body {
 .container__contact form button:hover {
   background-color: var(--yellow);
   color: var(--blue);
+}
+
+.footer {
+  background-color: #012b55;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.footer__container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+}
+
+.footer__logo{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.footer__logo i {
+  font-size: 1.5rem;
+  color: var(--yellow);
+}
+
+.footer__logo a {
+  font-size: 1.5rem;
+  color: var(--yellow);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer__menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.footer__menu ul {
+  gap: 10px;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.footer__menu ul li a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.8rem;
+}
+
+.footer__menu ul li a:hover {
+  color: var(--yellow);
+  text-decoration: underline;
+}
+
+.footer__container p {
+  font-size: 0.8rem;
+  color: var(--text);
 }
